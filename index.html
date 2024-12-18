@@ -3,46 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compositeur de Musique de Film</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #222;
-            color: #fff;
-            padding: 20px;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            font-size: 0.9em;
-            background-color: #222;
-            color: #fff;
-        }
-    </style>
+    <title>Compositeur de Musique</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur mon site</h1>
-        <p>Je compose des musiques pour films et projets visuels.</p>
+    <!-- Header avec un visuel attrayant -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Créez une émotion<br>avec ma musique</h1>
+            <p>Compositeur de musique pour films, séries et jeux vidéo.</p>
+            <a href="#portfolio" class="btn">Découvrir mes œuvres</a>
+        </div>
     </header>
-    <section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about">
         <h2>À propos</h2>
-        <p>Découvrez mes créations musicales et contactez-moi pour collaborer !</p>
+        <p>Je compose des musiques captivantes qui donnent vie à vos histoires. Découvrez mon univers musical.</p>
     </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <div class="item">
+                <h3>Projet 1</h3>
+                <p>Bande sonore pour un court-métrage.</p>
+            </div>
+            <div class="item">
+                <h3>Projet 2</h3>
+                <p>Musique pour un jeu vidéo indépendant.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        &copy; 2024 - Barnabé Chenel - Compositeur de musique
+        &copy; 2024 - Mon Nom - Compositeur de Musique
     </footer>
 </body>
 </html>
